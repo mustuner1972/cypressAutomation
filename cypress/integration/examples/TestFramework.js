@@ -1,6 +1,6 @@
 // <reference types='Cypress' />
-import HomePage from "./pageObjects/HomePage"
-import ProductPage from "./pageObjects/ProductPage "
+import HomePage from "../../support/pageObjects/HomePage"
+import ProductPage from "../../support/pageObjects/ProductPage "
 
 describe('My Framework Test', function() 
  {

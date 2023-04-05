@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules\\.bin\\cypress run",
-    "headTest" : "npm run test -- --browser chrome --headed",
-    "chromeTest" : "npm run test -- --browser chrome",
-    "cypress:open" : "npm run cypress open"
+    "headTest": "npm run test -- --browser chrome --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "cypress:open": "npm run cypress open"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +15,10 @@
     "cypress": "^12.3.0",
     "cypress-iframe": "^1.0.1",
     "install": "^0.13.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.1",
+    "@cypress/browserify-preprocessor": "latest"
+
   }
 }

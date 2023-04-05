@@ -8,9 +8,15 @@ module.exports = defineConfig({
   url: "https://rahulshettyacademy.com"
 },
   e2e: {
-    setupNodeEvents(on, config) {
+    async setupNodeEvents(on, config) {
       // implement node event listeners here
+      await preprocessor.addCucumberPreprocessorPlugin(on, config);
+
+  on("file:preprocessor", browserify.default(config));
+  
+
     },
-    specPattern: 'cypress/integration/examples/*.js'
+    specPattern: 'cypress/integration/examples/BDD/*.feature'
   },
+  
 });
